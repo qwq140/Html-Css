@@ -1,0 +1,20 @@
+footer{
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__ul{
+    display: flex;
+}
+
+.footer__li{
+    margin-left: 15px;
+    list-style-type: none;
+}
+
+footer div{
+    font-size: 11px;
+    font-weight: 700;
+    color: rgb(184, 184, 184)
+}
