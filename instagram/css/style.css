@@ -1,0 +1,136 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+
+.header{
+    height: 50px;
+    width : 935px;
+    padding: 10px 10px;
+    border: 5px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    
+    background-color: white;
+}
+
+.main{
+    width : 935px;
+    margin-bottom: 60px;
+    border: 5px solid black;
+}
+
+.section{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main__title{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.main__img{
+    width:"100%";
+    height: auto;
+}
+
+.main__icon{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.main__like{
+    padding-left: 10px;
+    font-weight: 600;
+}
+
+.main__writing{
+    padding:0 10px;
+}
+
+.footer{
+    width: 100%;
+    height: 130px;
+    margin-bottom: 52;
+}
+
+.footer__list-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.footer__list-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:12px 0;
+}
+
+.footer__text{
+    margin-right: 10px;
+    font-size: 12px;
+    color : gray;
+}
+
+.follow__logo{
+    width: 50px;
+    height: 50px;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.follow{
+    display: flex;
+}
+.follow__name{
+    height: 50px;
+    width: 100px;
+    font-size: 15px;
+    margin-left : 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.main__name{
+    font-weight: 600;
+}
+
+.open-comment{
+    color: rgb(158, 158, 158);
+}
+
+.upload-time{
+    font-size: 12px;
+    color: grey;
+}
+
+.follow__logo > img{
+    width: 32px;
+    height: 32px;
+}
+
+.title__icon{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav{
+    width: 935px;
+    height: 150px;
+    border: 5px solid black;
+}
