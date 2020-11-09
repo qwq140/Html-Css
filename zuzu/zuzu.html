@@ -4,31 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <header>
         <div class="header__title">zuzu.</div>
         <ul class="header__nav">
-            <li class="header__list">about</li>
-            <li class="header__list">collections</li>
-            <li class="header__list">videos</li>
-            <li class="header__list">contact</li>
+            <li class="header__list"><a href="#">about</a></li>
+            <li class="header__list"><a href="#">collections</a></li>
+            <li class="header__list"><a href="#">videos</a></li>
+            <li class="header__list"><a href="#">contact</a></li>
         </ul>
-        <div>검색 ENG</div>
+        <div class="header__search">
+            <i class="material-icons">search</i>
+            <span class="lang">ENG</span>
+        </div>
     </header>
     <main>
-        <section class="main__img">
-            <img src="/image/vacation.jpg"/>
+        <section class="main__left">
+            <div class="main__img">
+                <img src="image/vacation.jpg"/>
+            </div>
         </section>
-        <section class="main__title">
-            <div>
-                <div>New collection</div>
+        <section class="main__right">
+            <div class="main__title">
+                <div class="title__text">New</div>
+                <div class="title__text">collection</div>
             </div>
-            <div>
-                <div>아이콘2개</div>
-                <div>아이콘3개</div>
-            </div>
+            <footer>
+                <div class="right__footer">
+                    <div class="page">
+                        ‹ ›                    
+                    </div>
+                    <div class="footer__icon">
+                        <a class="facebook" href="#">
+                            <img src="image/facebook-social-icon-20.jpg"/>
+                        </a>
+                        <a class="instagram" href="#">
+                            <img src="image/insta_logo.png"/>
+                        </a>
+                        <a class="twitter" href="#">
+                            <img src="image/twitter_logo.png"/>
+                        </a>
+                    </div>
+                </div>
+            </footer>
         </section>
     </main>
 </body>

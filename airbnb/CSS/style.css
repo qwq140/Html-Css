@@ -5,7 +5,7 @@
 }
 header{
     height:880px;
-    background-image:url('/airbnb/images/background.jpg');
+    background-image:url("../images/background.jpg");
     background-size:cover;
 }
 nav{
