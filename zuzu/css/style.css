@@ -45,7 +45,8 @@ main{
 
 .main__img > img{
     height:880px;
-    margin-left:-120px;
+    width: 170%;
+    margin-left:-200px;
 }
 
 .main__right{

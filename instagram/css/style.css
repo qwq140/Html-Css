@@ -1,88 +1,64 @@
-*{
-    margin:0px;
-    padding:0px;
-    box-sizing: border-box;
-}
+@import url("common.css");
 
-
-.header{
-    height: 50px;
-    width : 935px;
-    padding: 10px 10px;
-    border: 5px solid black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-    
-    background-color: white;
-}
-
-.main{
-    width : 935px;
-    margin-bottom: 60px;
-    border: 5px solid black;
-}
-
-.section{
+.main-container{
     width:100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
+.main--nav{
+    width : 614px;
+    height: 100px;
+    margin-top : 100px;
+    margin-bottom: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+}
+
+.main--nav__user{
+    height : 90px;
+    width: 90px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin-left: 10px;
+    justify-content: center;
+}
+.main--nav__img{
+    height : 50px;
+    width : 50px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.main--nav__img > img{
+    height: 100%;
+    width: 100%;
+}
+.card{
+    width: 614px;
+    background-color: white;
+    border: 1px solid grey;
+}
 .main__title{
     display: flex;
     justify-content: space-between;
     padding: 10px 10px;
 }
 
-.main__img{
-    width:"100%";
-    height: auto;
-}
-
-.main__icon{
+.user{
     display: flex;
-    justify-content: space-between;
-    padding: 10px 10px;
 }
 
-.main__like{
-    padding-left: 10px;
-    font-weight: 600;
-}
-
-.main__writing{
-    padding:0 10px;
-}
-
-.footer{
-    width: 100%;
-    height: 130px;
-    margin-bottom: 52;
-}
-
-.footer__list-1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 24px;
-}
-
-.footer__list-2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin:12px 0;
-}
-
-.footer__text{
-    margin-right: 10px;
-    font-size: 12px;
-    color : gray;
-}
-
-.follow__logo{
+.user__logo{
     width: 50px;
     height: 50px;
     border: 1px solid grey;
@@ -90,11 +66,15 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    background-color: white;
 }
-.follow{
-    display: flex;
+
+.user__logo > img{
+    width: 32px;
+    height: 32px;
 }
-.follow__name{
+
+.user__name{
     height: 50px;
     width: 100px;
     font-size: 15px;
@@ -103,6 +83,84 @@
     display: flex;
     align-items: center;
 }
+
+.btn1{
+    background-color: white;
+    border : 0;
+}
+
+.card__img{
+    width:100%;
+    height: auto;
+}
+
+.card__img > img{
+    width:100%;
+}
+
+
+.main__icon{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.main__icon i{
+    font-size:20px;
+}
+
+.icon__center{
+    position: absolute;
+    left: 50%;
+    top:-5px;
+}
+
+.icon__center > span{
+    font-size:20px;
+    color: gray;
+}
+
+.main__like{
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.main__writing{
+    padding:0 10px;
+    margin-top:10px;
+    font-size: 14px;
+    line-height: 18px;
+    
+}
+
+.main__writing a{
+    color: rgb(73, 111, 126);
+}
+
+.main__comment{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input--comment{
+    display: flex;
+    height: 56px;
+    justify-content: space-between;
+    padding : 20px;
+}
+.input--comment input{
+    width: 90%;
+    border: none;
+    height: 18px;
+}
+
+.input--comment button{
+    background-color: white;
+    border: none;
+}
+
 
 .main__name{
     font-weight: 600;
@@ -115,12 +173,9 @@
 .upload-time{
     font-size: 12px;
     color: grey;
+    
 }
 
-.follow__logo > img{
-    width: 32px;
-    height: 32px;
-}
 
 .title__icon{
     height: 40px;
@@ -129,8 +184,3 @@
     
 }
 
-.nav{
-    width: 935px;
-    height: 150px;
-    border: 5px solid black;
-}
