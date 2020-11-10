@@ -10,27 +10,6 @@
 </head>
 
 <body>
-    <header class="header--container">
-        <nav class="nav--container">
-            <div class="nav-left">
-                <a href="#">
-                    <img src="images/735145cfe0a4.png" />
-                </a>
-            </div>
-            <div class="nav--center">
-                <input type="text" placeholder=" &#xf002; 검색" />
-            </div>
-            <div class="nav-right">
-                <a href="#"><i class="fas fa-home margin--left20"></i></a>
-                <a href="#"><i class="fas fa-paper-plane margin--left20"></i></a>
-                <a href="#"><i class="far fa-compass margin--left20"></i></a>
-                <i class="far fa-heart margin--left20"></i>
-                <div class="user-box margin--left20">
-                    <i class="fas fa-user"></i>
-                </div>
-            </div>
-        </nav>
-    </header>
     <main class="main-container">
         <section class="main--nav rad-3">
             <button class="main--nav__user">
@@ -232,6 +211,85 @@
             </form>
         </section>
     </main>
+    <header class="header--container">
+        <nav class="nav--container">
+            <div class="nav-left">
+                <a href="#">
+                    <img src="images/735145cfe0a4.png" />
+                </a>
+            </div>
+            <div class="nav--center">
+                <input type="text" placeholder="검색" id="search" />
+            </div>
+            <div class="nav-right">
+                <a href="#"><i class="fas fa-home margin--left20"></i></a>
+                <a href="#"><i class="far fa-paper-plane margin--left20"></i></a>
+                <a href="#"><i class="fas fa-compass margin--left20"></i></a>
+                <span class="header__heart">
+
+                    <i onclick="toggle1()" class="far fa-heart margin--left20"></i>
+                    <div class="heart__box">
+                        <div class="heart__list">
+                            <div class="follow__logo">
+                                <img src="images/youtube logo.jfif"/>
+                            </div>
+                            <div>
+                                <div class="follow__name">
+                                    yt.accounts
+                                </div>
+                                <div class="follow__text">
+                                    <span>님이 회원님을 팔로우하기 시작했습니다.</span>
+                                    <span class="follow__time"> 22시간</span>
+                                </div>
+                            </div>
+                            <button class="follow__btn">팔로우</button>
+                        </div>
+                    </div>
+                </span>
+                <div onclick="toggle2()" class="user-box margin--left20">
+                    <i class="fas fa-user-circle"></i>
+                    <div class="my-profile-list">
+                        <a class="nav--profile" href="#">
+                            <div class="profile__logo">
+                                <img src="images/profile.png"/>
+                            </div>
+                            <div class="profile__text">
+                                프로필
+                            </div>
+                        </a>
+                        <a class="nav--mark" href="#">
+                            <div class="profile__logo">
+                                <img src="images/bookmark.png"/>
+                            </div>
+                            <div class="profile__text">
+                                저장됨
+                            </div>
+                        </a>
+                        <a class="nav--option" href="#">
+                            <div class="profile__logo">
+                                <img src="images/option.png"/>
+                            </div>
+                            <div class="profile__text">
+                                설정
+                            </div>
+                        </a>
+                        <a class="nav--conversion" href="#">
+                            <div class="profile__logo">
+                                <img src="images/conversion.png"/>
+                            </div>
+                            <div class="profile__text">
+                                계정 전환
+                            </div>
+                        </a>
+                        <hr/>
+                        <a class="nav--logout" href="#">
+                            로그아웃
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
     <section>
         <footer class="footer">
             <div class="footer__list-1">
@@ -252,6 +310,14 @@
             </div>
         </footer>
     </section>
+    <script>
+        function toggle1(){
+            $(".heart__box").toggle();
+        }
+        function toggle2(){
+            $(".my-profile-list").toggle();
+        }
+    </script>
 </body>
 
 </html>

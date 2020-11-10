@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/gallery.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
@@ -10,6 +11,7 @@
 </head>
 
 <body>
+    
     <main class="gallery-container">
         <div class="item1">
             <div class="item__shadow">
@@ -74,6 +76,7 @@
             </div>
             <img src="images/galleryimg.jpg" />
         </div>
+    
     </main>
     <header class="header--container">
         <nav class="nav--container">
@@ -83,23 +86,73 @@
                 </a>
             </div>
             <div class="nav--center">
-                <i class="fas fa-search">
-                    <input type="text" placeholder="검색" />
-                </i>
+                <input type="text" placeholder="검색" id="search" />
             </div>
             <div class="nav-right">
                 <a href="#"><i class="fas fa-home margin--left20"></i></a>
-                <a href="#"><i class="fas fa-paper-plane margin--left20"></i></a>
-                <a href="#"><i class="far fa-compass margin--left20"></i></a>
+                <a href="#"><i class="far fa-paper-plane margin--left20"></i></a>
+                <a href="#"><i class="fas fa-compass margin--left20"></i></a>
                 <span class="header__heart">
 
-                    <i class="far fa-heart margin--left20"></i>
+                    <i onclick="toggle1()" class="far fa-heart margin--left20"></i>
                     <div class="heart__box">
-                        <div class="heart__list"></div>
+                        <div class="heart__list">
+                            <div class="follow__logo">
+                                <img src="images/youtube logo.jfif"/>
+                            </div>
+                            <div>
+                                <div class="follow__name">
+                                    yt.accounts
+                                </div>
+                                <div class="follow__text">
+                                    <span>님이 회원님을 팔로우하기 시작했습니다.</span>
+                                    <span class="follow__time"> 22시간</span>
+                                </div>
+                            </div>
+                            <button class="follow__btn">팔로우</button>
+                        </div>
                     </div>
                 </span>
-                <div class="user-box margin--left20">
-                    <i class="fas fa-user"></i>
+                <div onclick="toggle2()" class="user-box margin--left20">
+                    <i class="fas fa-user-circle"></i>
+                    <div class="my-profile-list">
+                        <a class="nav--profile" href="#">
+                            <div class="profile__logo">
+                                <img src="images/profile.png"/>
+                            </div>
+                            <div class="profile__text">
+                                프로필
+                            </div>
+                        </a>
+                        <a class="nav--mark" href="#">
+                            <div class="profile__logo">
+                                <img src="images/bookmark.png"/>
+                            </div>
+                            <div class="profile__text">
+                                저장됨
+                            </div>
+                        </a>
+                        <a class="nav--option" href="#">
+                            <div class="profile__logo">
+                                <img src="images/option.png"/>
+                            </div>
+                            <div class="profile__text">
+                                설정
+                            </div>
+                        </a>
+                        <a class="nav--conversion" href="#">
+                            <div class="profile__logo">
+                                <img src="images/conversion.png"/>
+                            </div>
+                            <div class="profile__text">
+                                계정 전환
+                            </div>
+                        </a>
+                        <hr/>
+                        <a class="nav--logout" href="#">
+                            로그아웃
+                        </a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -124,6 +177,157 @@
             </div>
         </footer>
     </section>
+    <div class="bg--modal">
+        <div class="modal__post">
+            <div class="post__left">
+                <img src="images/card1.jpg"/>
+            </div>
+            <div class="post__right">
+                <div class="right__header">
+                    <div class="right__user--img">
+                        <img src="images/youtube logo.jfif"/>
+                    </div>
+                    <div class="right__user--info">
+                        <div class="right__user--name">
+                            <span>youtube • </span>
+                            <button class="right__follow">팔로우</button>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn--bg0--bor0"><i class="material-icons">more_horiz</i></button>
+                    </div>
+                </div>
+                <hr/>
+                <div class="right__comment">
+                    <div class="comment__other--user">
+                        <div class="right__user--img">
+                            <img src="images/profile2.png"/>
+                        </div>
+                        <div class="other--user__text">
+                            <div>
+                                <span class="right__user--name ">pushka.7 </span>
+                                <span class="margin--bottom10">Good-</span>
+                                <div>
+                                    <span class="font--weight600--gray">1시간</span>
+                                    <span class="margin--left14 font--weight600--gray">좋아요 1개</span>
+                                    <span class="margin--left14 font--weight600--gray">답글 달기</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="comment__other--user">
+                        <div class="right__user--img">
+                            <img src="images/profile2.png"/>
+                        </div>
+                        <div class="other--user__text">
+                            <div>
+                                <span class="right__user--name ">pushka.7 </span>
+                                <span class="margin--bottom10">Good-</span>
+                                <div>
+                                    <span class="font--weight600--gray">1시간</span>
+                                    <span class="margin--left14 font--weight600--gray">좋아요 1개</span>
+                                    <span class="margin--left14 font--weight600--gray">답글 달기</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="comment__other--user">
+                        <div class="right__user--img">
+                            <img src="images/profile2.png"/>
+                        </div>
+                        <div class="other--user__text">
+                            <div>
+                                <span class="right__user--name ">pushka.7 </span>
+                                <span class="margin--bottom10">Good-</span>
+                                <div>
+                                    <span class="font--weight600--gray">1시간</span>
+                                    <span class="margin--left14 font--weight600--gray">좋아요 1개</span>
+                                    <span class="margin--left14 font--weight600--gray">답글 달기</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="comment__other--user">
+                        <div class="right__user--img">
+                            <img src="images/profile2.png"/>
+                        </div>
+                        <div class="other--user__text">
+                            <div>
+                                <span class="right__user--name ">pushka.7 </span>
+                                <span class="margin--bottom10">Good-</span>
+                                <div>
+                                    <span class="font--weight600--gray">1시간</span>
+                                    <span class="margin--left14 font--weight600--gray">좋아요 1개</span>
+                                    <span class="margin--left14 font--weight600--gray">답글 달기</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="comment__other--user">
+                        <div class="right__user--img">
+                            <img src="images/profile2.png"/>
+                        </div>
+                        <div class="other--user__text">
+                            <div>
+                                <span class="right__user--name ">pushka.7 </span>
+                                <span class="margin--bottom10">Good-</span>
+                                <div>
+                                    <span class="font--weight600--gray">1시간</span>
+                                    <span class="margin--left14 font--weight600--gray">좋아요 1개</span>
+                                    <span class="margin--left14 font--weight600--gray">답글 달기</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="comment__other--user">
+                        <div class="right__user--img">
+                            <img src="images/profile2.png"/>
+                        </div>
+                        <div class="other--user__text">
+                            <div>
+                                <span class="right__user--name ">pushka.7 </span>
+                                <span class="margin--bottom10">Good-</span>
+                                <div>
+                                    <span class="font--weight600--gray">1시간</span>
+                                    <span class="margin--left14 font--weight600--gray">좋아요 1개</span>
+                                    <span class="margin--left14 font--weight600--gray">답글 달기</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+                
+            </div>
+        </div>
+    </div>
+<script>
+    function toggle1(){
+        $(".heart__box").toggle();
+    }
+    function toggle2(){
+        $(".my-profile-list").toggle();
+    }
+</script>
+
 </body>
 
 </html>

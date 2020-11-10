@@ -20,8 +20,8 @@
     height:54px;
     padding: 0 20px;
     margin: 0 auto;
-    
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: center;
     background-color: white;
@@ -35,25 +35,29 @@
     
 }
 .nav-right a{
-    color : gray;
+    color : black;
 }
 .nav-right i{
     font-size: 22px;
 }
 
-.nav--center{
-    height: 28px;
-    width: 215px;
-    border: 1px solid gray;
-    border-radius: 7px;
-    padding: 0 10px;
-    color: gray;
-}
 
 .nav--center input{
-    height: 100%;
-    width: 100%;
-    border: none;
+   border: solid 1px #dbdbdb;
+   border-radius : 3px;
+   background : url("/images/search_icon-icons.com_69921.png") no-repeat;
+   background-position:55px;
+   background-size: 14px;
+   text-align: center;
+    height: 30px;
+    width: 210px;
+    background-color: #fafafa;
+}
+.nav--center input:focus{
+    background-image: none;
+    border: solid 1px #dbdbdb;
+    outline: none;
+    text-align: start;
 }
 
 .nav--center button{
@@ -62,6 +66,7 @@
 }
 
 .nav-left{
+    margin-top: 10px;
     display: flex;
     align-items: center;
 }
@@ -74,8 +79,119 @@
     align-items: center;
     border-radius: 50%;
     border: 1px solid grey;
-    background-color: rgb(219, 219, 219);
     overflow: hidden;
+    cursor: pointer;
+}
+
+.my-profile-list{
+    display: none;
+    flex-direction: column;
+    height: 194px;
+    width: 230px;
+    position: absolute;
+    top: 53px;
+    right: 0;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 -1px 0 0 rgb(223, 223, 223);
+}
+
+.nav--profile{
+    width: 230px;
+    height: 37px;
+    padding: 8px 16px;
+    display: flex;
+}
+
+.nav--mark{
+    width: 230px;
+    height: 37px;
+    padding: 8px 16px;
+    display: flex;
+}
+
+.nav--option{
+    width: 230px;
+    height: 37px;
+    padding: 8px 16px;
+    display: flex;
+}
+
+.nav--conversion{
+    width: 230px;
+    height: 41px;
+    padding: 8px 16px;
+    margin-bottom: 4px;
+    display: flex;
+}
+
+.nav--logout{
+    width: 230px;
+    height: 41px;
+    padding: 8px 16px;
+    margin-bottom: 4px;
+    display: flex;
+    font-size: 16px;
+}
+
+.profile__logo{
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+}
+
+.profile__logo img{
+    width: 100%;
+    height: 100%;    
+}
+
+.profile__text{
+    font-size: 16px;
+}
+
+.mark__logo{
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+}
+
+.mark__logo img{
+    width: 100%;
+    height: 100%;    
+}
+
+.mark__text{
+    font-size: 16px;
+}
+
+.option__logo{
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+}
+
+.option__logo img{
+    width: 100%;
+    height: 100%;    
+}
+
+.option__text{
+    font-size: 16px;
+}
+
+.conversion__logo{
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+}
+
+.conversion__logo img{
+    width: 100%;
+    height: 100%;    
+}
+
+.conversion__text{
+    font-size: 16px;
 }
 
 .user-box > i {
@@ -139,7 +255,7 @@ a{
 
 
 .heart__box{
-    display: block;
+    display: none;
     position: absolute;
     height: 100px;
     width: 500px;
@@ -154,8 +270,128 @@ a{
     width: 100%;
     padding:12px 16px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.header__heart:active >.heart__box{
-    display: block;
+.follow__logo{
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid #dbdbdb;
+    overflow: hidden;
+}
+
+.follow__logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.follow__name{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.follow__text span{
+    font-size:15px;
+}
+
+.follow__time{
+    color: gray;
+}
+
+.follow__btn{
+    padding: 5px 9px;
+    height: 32px;
+    border: 0px;
+    background-color:#0095f6;
+    color: white;
+    border-radius: 5px;
+    outline: 0;
+    cursor: pointer;
+}
+
+.bg--modal{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+
+.modal__post{
+    width: 935px;
+    height: 600px;
+    margin: 0 auto;
+    position: absolute;
+    display: flex;
+    background-color: white;
+}
+
+.post__left{
+    width: 600px;
+    height: 600px;
+}
+
+.post__left img{
+    width:100%;
+    height:100%;
+}
+
+.post__right{
+    width: 315px;
+    height:600px;
+}
+
+.right__header{
+    width: 100%;
+    height: 72px;
+    padding:16px;
+    display: flex;
+    align-items: center;
+}
+
+.right__user--img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+    border:1px solid gray;
+}
+
+.right__user--img img{
+    width: 100%;
+    height : 100%;
+}
+
+.right__user--info{
+    width: 256px;
+    height: 26px;
+    margin-left: 14px;
+    display: flex;
+}
+
+.right__user--name{
+    font-weight: 600;
+}
+
+.right__follow{
+    color: rgb(0, 101, 252);
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background-color: white;
+}
+
+button {
+    outline:0;
+    cursor: pointer;
+}
+
+.btn--bg0--bor0{
+    background-color: white;
+    border:0;
 }
