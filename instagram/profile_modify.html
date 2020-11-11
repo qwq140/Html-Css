@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/modify.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
+</head>
+
+<body>
+    <main class="modify--main">
+        <div class="modify__box">
+            <div class="img__modify">
+                <img src="images/profile.png" />
+            </div>
+            <div class="modify--id">
+                <div class="my--id">qwq2463</div>
+                <button class="img__modify--btn">프로필 사진 바꾸기</button>
+            </div>
+        </div>
+        <form class="modify__input">
+            <div class="input__box">
+                <div class="input__name">
+                    <div>이름</div>
+                </div>
+                <div class="text__box">
+                    <div class="text__input">
+                        <input type="text" placeholder="이름">
+                        <div>
+                            사람들이 이름, 별명 또는 비즈니스 이름 등 회원님의 알려진 이름을 사용하여 회원님의 계정을 찾을 수 있도록 도와주세요.
+                            이름은 14일 안에 두 번만 변경할 수 있습니다.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="input__box">
+                <div class="input__name">
+                    <div>사용자 이름</div>
+                </div>
+                <div class="text__box">
+                    <div class="text__input">
+                        <input type="text" placeholder="사용자 이름">
+                        <div>
+                            대부분의 경우 14일 이내에 사용자 이름을 다시 (으)로 변경할 수 있습니다.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="input__box">
+                <div class="input__name">
+                    <div>웹 사이트</div>
+                </div>
+                <div class="text__box">
+                    <div class="text__input">
+                        <input type="text" placeholder="웹사이트">
+                    </div>
+                </div>
+            </div>
+            <div class="input__box">
+                <div class="input__name">
+                    <div>소개</div>
+                </div>
+                <div class="text__box">
+                    <div class="text__input">
+                        <textarea></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="input__box">
+                <div class="input__name">
+                </div>
+                <div class="text__box">
+                    <div class="text__input">
+                        <div>
+                            <div style="font-size: 14px; margin-bottom: 4px;">개인 정보</div>
+                            <div>비즈니스나 반려동물 등에 사용된 계정인 경우에도 회원님의 개인 정보를 입력하세요. 공개 프로필에는 포함되지 않습니다.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="input__box">
+                <div class="input__name">
+                    <div>이메일</div>
+                </div>
+                <div class="text__box">
+                    <div class="text__input">
+                        <input type="text" placeholder="이메일">
+                    </div>
+                </div>
+            </div>
+            <div class="input__box">
+                <div class="input__name">
+                    <div>전화번호</div>
+                </div>
+                <div class="text__box">
+                    <div class="text__input">
+                        <input type="text" placeholder="전화번호" />
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="input__box">
+                <div class="input__name">
+                    <div>성별</div>
+                </div>
+                <div class="text__box">
+                    <div class="text__input">
+                        <input type="text" placeholder="성별">
+                    </div>
+                </div>
+            </div>
+            <div class="input__box">
+                <div class="input__name">
+                    <div>계정 추천</div>
+                </div>
+                <div class="text__box">
+                    <div class="check__content">
+                        <input type="checkbox" value checked />
+                        <span>팔로우할 만한 비슷한 계정을 추천할 때 회원님의 계정을 포함합니다.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="input__box">
+                <div class="input__name">
+
+                </div>
+                <div class="text__box">
+                    <div class="btn--box">
+                        <button>제출</button>
+                        <span>계정을 일시적으로 비활성화</span>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+    <header class="header--container">
+        <nav class="nav--container">
+            <div class="nav-left">
+                <a href="instamain.html">
+                    <img src="images/735145cfe0a4.png" />
+                </a>
+            </div>
+            <div class="nav--center">
+                <input type="text" placeholder="검색" id="search" />
+            </div>
+            <div class="nav-right">
+                <a href="instamain.html"><i class="fas fa-home margin--left20"></i></a>
+                <a href="#"><i class="far fa-paper-plane margin--left20"></i></a>
+                <a href="instagallery.html"><i class="fas fa-compass margin--left20"></i></a>
+                <span class="header__heart">
+
+                    <i onclick="toggle1()" class="far fa-heart margin--left20"></i>
+                    <div class="heart__box">
+                        <div class="heart__list">
+                            <div class="follow__logo">
+                                <img src="images/youtube logo.jfif" />
+                            </div>
+                            <div>
+                                <div class="follow__name">
+                                    yt.accounts
+                                </div>
+                                <div class="follow__text">
+                                    <span>님이 회원님을 팔로우하기 시작했습니다.</span>
+                                    <span class="follow__time"> 22시간</span>
+                                </div>
+                            </div>
+                            <button class="follow__btn">팔로우</button>
+                        </div>
+                    </div>
+                </span>
+                <div onclick="toggle2()" class="user-box margin--left20">
+                    <i class="fas fa-user-circle"></i>
+                    <div class="my-profile-list">
+                        <a class="nav--profile" href="istaProfile.html">
+                            <div class="profile__logo">
+                                <img src="images/profile.png" />
+                            </div>
+                            <div class="profile__text">
+                                프로필
+                            </div>
+                        </a>
+                        <a class="nav--mark" href="#">
+                            <div class="profile__logo">
+                                <img src="images/bookmark.png" />
+                            </div>
+                            <div class="profile__text">
+                                저장됨
+                            </div>
+                        </a>
+                        <a class="nav--option" href="#">
+                            <div class="profile__logo">
+                                <img src="images/option.png" />
+                            </div>
+                            <div class="profile__text">
+                                설정
+                            </div>
+                        </a>
+                        <a class="nav--conversion" href="#">
+                            <div class="profile__logo">
+                                <img src="images/conversion.png" />
+                            </div>
+                            <div class="profile__text">
+                                계정 전환
+                            </div>
+                        </a>
+                        <hr />
+                        <a class="nav--logout" href="#">
+                            로그아웃
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <footer class="footer">
+            <div class="footer__list-1">
+                <div class="footer__text">소개</div>
+                <div class="footer__text">블로그</div>
+                <div class="footer__text">채용 정보</div>
+                <div class="footer__text">도움말</div>
+                <div class="footer__text">API</div>
+                <div class="footer__text">개인정보처리방침</div>
+                <div class="footer__text">약관</div>
+                <div class="footer__text">인기 계정</div>
+                <div class="footer__text">해시태그</div>
+                <div class="footer__text">위치</div>
+            </div>
+            <div class="footer__list-2">
+                <div class="footer__text">한국어</div>
+                <div class="footer__text">© 2020 Instagram from Facebook</div>
+            </div>
+        </footer>
+    </section>
+    <script>
+        function toggle1() {
+            $(".heart__box").toggle();
+        }
+        function toggle2() {
+            $(".my-profile-list").toggle();
+        }
+    </script>
+</body>
+
+</html>

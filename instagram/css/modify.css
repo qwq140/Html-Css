@@ -1,0 +1,143 @@
+@import url("common.css");
+
+.modify--main{
+    width: 696px;
+    margin:0 auto;
+    margin-top:80px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.modify__box{
+    width : 696px;
+    height : 42px;
+    margin-top: 32px;
+
+}
+
+.modify__box{
+    display: flex;
+}
+
+.img__modify{
+    width: 38px;
+    height: 38px;
+    margin-left: 124px;
+    margin-right: 32px;
+    margin-top:2px;
+    border-radius: 50%;
+    border: 1px solid #dbdbdb;
+}
+
+.img__modify img{
+    width: 100%;
+    height: 100%;
+}
+
+.my--id{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.img__modify--btn{
+    border: 0;
+    background-color: white;
+    color: rgb(51, 152, 192);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.modify__input{
+    width: 696px;
+    height: 703px;
+    margin: 16px 0;
+}
+
+.input__box{
+    width: 100%;
+    margin-bottom: 16px;
+    display: flex;
+}
+
+.input__name{
+    width: 194px;
+    padding: 0 32px;
+    margin-top: 6px;
+}
+
+.input__name{
+    text-align: end;
+    font-weight: 600;
+}
+
+.text__box{
+    width: 502px;
+    padding-right: 60px;
+}
+
+.text__input{
+    width: 355px;
+}
+
+.text__input input{
+    height: 30px;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.text__input >div{
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: gray;
+}
+
+.text__input textarea{
+    width: 355px;
+    height: 60px;
+    border-radius: 5px;
+    padding: 6px 10px;
+}
+
+.check__content{
+    width: 190px;
+    height: 42px;
+    margin: 6px 0;
+    display: flex;
+    align-items: center;
+}
+
+.check__content input{
+    margin-right: 8px;
+    margin-left: 3px;
+    background-color: white;
+}
+
+.check__content > span{
+    font-size:12px;
+    font-weight: 600;
+}
+
+.btn--box{
+    height: 30px;
+    margin-top: 16px;
+}
+
+.btn--box >button{
+    width: 48px;
+    height: 30px;
+    padding: 5px 9px;
+    border:1px solid skyblue;
+    color: white;
+    background-color: skyblue;
+    border-radius: 5px;
+}
+
+.btn--box >span{
+    margin-left: 105px;
+    margin-right: 4px;
+    font-size: 14px;
+    color: rgb(74, 188, 233);
+    font-weight: 600;
+}
