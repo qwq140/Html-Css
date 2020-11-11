@@ -230,6 +230,7 @@
 
 body{
     background-color: rgb(241, 241, 241);
+    position: relative;
 }
 
 a{
@@ -315,7 +316,7 @@ a{
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -395,3 +396,4 @@ button {
     background-color: white;
     border:0;
 }
+

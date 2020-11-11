@@ -3,7 +3,7 @@
 .gallery-container{
     max-width: 935px;
     margin : 0 auto;
-    margin-top: 74px;
+    padding-top: 74px;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 10px;
@@ -126,10 +126,23 @@
 .modal__post{
     width: 935px;
     height: 600px;
-    margin: 0 auto;
+
     position: absolute;
     display: flex;
     background-color: white;
+    top : 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+}
+
+.modal__close{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 24px;
+    color: white;
 }
 
 .post__left{
@@ -193,6 +206,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    border-top:1px solid #dbdbdb ;
     
 }
 
@@ -217,4 +231,86 @@
     font-weight: 600;
     color: gray;
     font-size: 13px;
+}
+
+.post__icon--box{
+    width: 335px;
+    height: 44px;
+    padding:0 16px;
+    padding-top: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #dbdbdb ;
+}
+
+.post__icon--left{
+    display: flex;
+}
+
+
+.post__icon{
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    font-size:24px;
+    background-color: white;
+    border: 0;
+}
+
+.post__heart--ea{
+    width: 335px;
+    padding: 0 16px;
+    margin-bottom: 4px;
+    
+}
+
+.post__heart--ea button{
+    border: 0;
+    background-color: white;
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 8px ;
+}
+
+.post__time{
+    width: 335px;
+    padding-left: 16px ;
+    color: gray;
+    font-size: 12px;
+    margin-left: 8px ;
+}
+
+.post__time a{
+    color: gray;
+}
+
+.right__comment--input{
+    width: 335px;
+    height: 55px;
+    padding: 0 16px;
+    border-top: 1px solid #dbdbdb;
+    margin-top: 8px;
+}
+
+.input--area{
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input--area input{
+    width: 265px;
+    height: 18px;
+    border: 0;
+    outline: 0;
+}
+
+.input--area button{
+    height: 18px;
+    background-color: white;
+    border: 0;
+    color: skyblue;
+    
 }

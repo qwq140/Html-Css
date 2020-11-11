@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
@@ -214,7 +215,7 @@
     <header class="header--container">
         <nav class="nav--container">
             <div class="nav-left">
-                <a href="#">
+                <a href="instamain.html">
                     <img src="images/735145cfe0a4.png" />
                 </a>
             </div>
@@ -222,16 +223,16 @@
                 <input type="text" placeholder="검색" id="search" />
             </div>
             <div class="nav-right">
-                <a href="#"><i class="fas fa-home margin--left20"></i></a>
+                <a href="instamain.html"><i class="fas fa-home margin--left20"></i></a>
                 <a href="#"><i class="far fa-paper-plane margin--left20"></i></a>
-                <a href="#"><i class="fas fa-compass margin--left20"></i></a>
+                <a href="instagallery.html"><i class="fas fa-compass margin--left20"></i></a>
                 <span class="header__heart">
 
                     <i onclick="toggle1()" class="far fa-heart margin--left20"></i>
                     <div class="heart__box">
                         <div class="heart__list">
                             <div class="follow__logo">
-                                <img src="images/youtube logo.jfif"/>
+                                <img src="images/youtube logo.jfif" />
                             </div>
                             <div>
                                 <div class="follow__name">
@@ -249,9 +250,9 @@
                 <div onclick="toggle2()" class="user-box margin--left20">
                     <i class="fas fa-user-circle"></i>
                     <div class="my-profile-list">
-                        <a class="nav--profile" href="#">
+                        <a class="nav--profile" href="istaProfile.html">
                             <div class="profile__logo">
-                                <img src="images/profile.png"/>
+                                <img src="images/profile.png" />
                             </div>
                             <div class="profile__text">
                                 프로필
@@ -259,7 +260,7 @@
                         </a>
                         <a class="nav--mark" href="#">
                             <div class="profile__logo">
-                                <img src="images/bookmark.png"/>
+                                <img src="images/bookmark.png" />
                             </div>
                             <div class="profile__text">
                                 저장됨
@@ -267,7 +268,7 @@
                         </a>
                         <a class="nav--option" href="#">
                             <div class="profile__logo">
-                                <img src="images/option.png"/>
+                                <img src="images/option.png" />
                             </div>
                             <div class="profile__text">
                                 설정
@@ -275,13 +276,13 @@
                         </a>
                         <a class="nav--conversion" href="#">
                             <div class="profile__logo">
-                                <img src="images/conversion.png"/>
+                                <img src="images/conversion.png" />
                             </div>
                             <div class="profile__text">
                                 계정 전환
                             </div>
                         </a>
-                        <hr/>
+                        <hr />
                         <a class="nav--logout" href="#">
                             로그아웃
                         </a>
@@ -311,10 +312,10 @@
         </footer>
     </section>
     <script>
-        function toggle1(){
+        function toggle1() {
             $(".heart__box").toggle();
         }
-        function toggle2(){
+        function toggle2() {
             $(".my-profile-list").toggle();
         }
     </script>
